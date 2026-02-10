@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<p class="alert alert-success">@TempData["message"]</p>
+
+<form method="POST" action="/User/LoginSubmit">
+    <input type="email" name="email" placeholder="Enter your email" class="form-control"/>
+    <input type="password" name="password" placeholder="Enter your password" class="form-control mt-2"/>
+    <input type="submit" value="Login" class="btn btn-primary mt-2"/>
+</form>
